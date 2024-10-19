@@ -9,12 +9,21 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The Kogge-Stone adder is a parallel prefix adder. 
+Comparing with the conventional ripple-carry adder, it is more efficient.
+It utilizes the GENERATE and PROPAGATE signals to calculate each CARRY in advanced to reduce the carry propagation delay.
+
+The block diagram of the Kogge-stone adder is shown below [1].
 
 ## How to test
 
-Explain how to use your project
+Please refer to below link to test your Verilog design:
+https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part
 
-## External hardware
+Actions can be taken on Docs, Test and GDS.
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Reference: 
+[1] Kogge–Stone Adder (2024) Wikipedia. Available at: https://en.wikipedia.org/wiki/Kogge%E2%80%93Stone_adder (Accessed: 19 October 2024).
+
+![72421729307326_ pic](https://github.com/user-attachments/assets/c9babcfb-89a3-4c77-a8ea-177cb9224e5f)
+

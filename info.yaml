@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "4-bit kogge stone adder"      # Project title
+  title:        "4-bit ALU"      # Project title
   author:       "Runming Zeng"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Implement a 4-bit Kogge Stone Adder"      # One line description of what your project does
+  description:  "Implement a 4-bit ALU with the function of ADD, SUB, MUL, DIV, logical AND, OR, XOR, NOT, Encryption operation"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -11,7 +11,7 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_koggestone_adder4"
+  top_module:  "tt_um_Richard28277"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
@@ -22,34 +22,35 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "A[0]"
-  ui[1]: "A[1]"
-  ui[2]: "A[2]"
-  ui[3]: "A[3]"
-  ui[4]: "B[0]"
-  ui[5]: "B[1]"
-  ui[6]: "B[2]"
-  ui[7]: "B[3]"
+  ui[0]: "b[0]"
+  ui[1]: "b[1]"
+  ui[2]: "b[2]"
+  ui[3]: "b[3]"
+  ui[4]: "a[0]"
+  ui[5]: "a[1]"
+  ui[6]: "a[2]"
+  ui[7]: "a[3]"
 
   # Outputs
-  uo[0]: "Sum[0]"
-  uo[1]: "Sum[1]"
-  uo[2]: "Sum[2]"
-  uo[3]: "Sum[3]"
-  uo[4]: "Cout"
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "result[0]"
+  uo[1]: "result[1]"
+  uo[2]: "result[2]"
+  uo[3]: "result[3]"
+  uo[4]: "result[4]"
+  uo[5]: "result[5]"
+  uo[6]: "result[6]"
+  uo[7]: "result[7]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
+  uio[0]: "opcode[0]"
+  uio[1]: "opcode[1]"
+  uio[2]: "opcode[2]"
+  uio[3]: "opcode[3]"
+  uio[4]: "carry_out"
+  uio[5]: "overflow"
   uio[6]: ""
   uio[7]: ""
+
 
 # Do not change!
 yaml_version: 6
